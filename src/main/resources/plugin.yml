@@ -1,0 +1,20 @@
+name: RandomWorldSpawnMob
+main: br.net.fabiozumbi12.RWSM.RWSM
+version: 1.0
+author: FabioZumbi12
+description: Spawn any types of random mobs on world.
+commands:
+  RandomWorldSpawnMob:
+    description: "Main command for RandomWorldSpawnMob."
+    usage: "Error, use '/RandomWorldSpawnMob ?' to see the commands."
+    aliases: [rwsm, randommob, rmob]
+permissions:
+  rwsm.*:
+    description: "All RandomWorldSpawnMob commands."
+    default: op
+    children:
+      rwsm.user: true
+      rwsm.admin: true
+  rwsm.admin:
+    default: false
+    rwsm.bypass.hostile: true
